@@ -268,16 +268,24 @@
     height: 85px;
     border-radius: 50%;
     margin: 0 auto;
+    cursor: pointer;
+}
+.carou__item{
+    padding: .5rem 0;
+    margin-bottom: 1.5rem;
 }
 .carou__item i{
-    font-size: 50px;
+    font-size: 40px;
     display: block;
     color: #ff6600;
+    margin: 10px 0;
 }
 .carou__item p:first-of-type{
     font-size: 24px;
     color: black;
     font-weight: 600;
+    letter-spacing: 1px;
+    font-style: italic;
 }
 .carou__item p:nth-of-type(2){
     font-size: 18px;
@@ -286,13 +294,16 @@
 .carou__item h3{
     font-size: 20px;
     font-weight: 600;
-    margin: 0;
+    margin:1.5rem 0 0;
 }
 .carou__item p:last-of-type{
     margin-bottom: 0;
     margin-top: 4px;
     font-size: 18px;
     color: #161c2db3;
+}
+.owl-theme .owl-dots .owl-dot{
+    outline: none;
 }
 .owl-theme .owl-dots .owl-dot span{
 }
@@ -345,10 +356,11 @@
 }
 /* Blog */
 @media (max-width:1080px){
-    .blog__title h2{
+    .blog__title h2, .carou__title h2{
         font-size: 32px;
         line-height: 40px;
     }
+    
 }
 @media (max-width:990px){
     .blog__body h4{
@@ -357,11 +369,11 @@
     }
 }
 @media (max-width:600px){
-    .blog__title h2{
+    .blog__title h2,.carou__title h2{
         font-size: 30px;
         line-height: 38px;
     }
-    .blog__title h6{
+    .blog__title h6,.carou__title h6{
         font-size: 16px;
     }
     .blog__body>p{
@@ -370,15 +382,37 @@
     }
 }
 @media (max-width:480px){
-    .blog__title h2{
+    .blog__title h2,.carou__title h2{
         font-size: 26px;
         line-height: 36px;
     }
 }
 @media (max-width:375px){
-    .blog__title h2{
+    .blog__title h2,.carou__title h2{
         font-size: 24px;
         line-height: 34px;
+    }
+}
+/* Carousel */
+@media (max-width:675px){
+    .carou__item i{
+        font-size: 30px;
+    }
+    .carou__item p:first-of-type{
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+@media (max-width:600px){
+    .carou__item p:nth-of-type(2){
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media (max-width:475px){
+    .carou__item p:first-of-type{
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 /* Animation */
