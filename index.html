@@ -62,28 +62,28 @@
                 <div class="col-6 col-md-3 mt-4 mt-md-0 ">
                     <div class="number__item">
                         <i class="fa-solid fa-building"></i>
-                        <p>15,100</p>
+                        <p class="counter">15,100</p>
                         <p>Branches</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-4 mt-md-0 ">
                     <div class="number__item">
                         <i class="fa-solid fa-utensils"></i>
-                        <p>19,256</p>
+                        <p class="counter">19,256</p>
                         <p>Food Items</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-4 mt-md-0 ">
                     <div class="number__item">
                         <i class="fa-solid fa-users"></i>
-                        <p>15,100</p>
+                        <p class="counter">15,100</p>
                         <p>Chefs</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-4 mt-md-0 ">
                     <div class="number__item">
                         <i class="fa-solid fa-face-smile"></i>
-                        <p>2,560</p>
+                        <p class="counter">2,560</p>
                         <p>Happy Customers</p>
                     </div>
                 </div>
@@ -257,10 +257,91 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer></footer>
+    <footer id="footer__dinner">
+        <div class="container py-4">
+            <div class="footer__top mb-5">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="footer__first">
+                            <h2><a href="#">Dinner</a></h2>
+                            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                                tempufddfel. Lorem ipsum dolor sit amet Semper at elit.
+                            </p>
+                            <div class="footer__social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-sm-0">
+                        <div class="footer__item">
+                            <h4>Usefull Links</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog posts</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                        <div class="footer__item">
+                            <h4>More Info</h4>
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Vision & Values</a></li>
+                                <li><a href="#">Awards</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-5 mt-lg-0">
+                        <div class="footer__sub">
+                            <h4>Subscribe to our Newsletter</h4>
+                            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+                            <form>
+                                <input type="email" placeholder="Your Email Address" />
+                                <button class="btn">Subscibe Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bot container py-2">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="color_footer">© 2021 Diner. All rights reserved. Design by <span>W3Layouts</span> </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="footer__right">
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="backToTop">
+        <a href="#" class="cd-top text-replace js-cd-top">
+            ⤴
+        </a>
+    </div>
     <!-- lib Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lib Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Lib Magnific popup -->
     <script src="./lib/jquery.magnific-popup.min.js"></script>
@@ -299,6 +380,14 @@
             }
         })
     </script>
+    <!-- count up -->
+    <script src="./lib/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- Back to top -->
+    <script src="./lib/backtotop/util.js"></script>
+    <script src="./lib/backtotop/main.js"></script>
     <!-- BS4 -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -307,5 +396,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
