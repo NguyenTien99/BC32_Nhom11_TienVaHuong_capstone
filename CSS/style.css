@@ -1,6 +1,62 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+/*  Start default class*/
+.pd-none {
+    padding: 0;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.display-block{
+    display: block !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+/*  End default class*/
+
+.theme__dark #search-bar
+,.theme__dark #search_icon
+,.theme__dark #about__us
+,.theme__dark #theme__whatnew
+
+{
+    background: #282828 !important;
+    color: #fff !important;
+}
+
+.theme__dark #theme__menu .theme__icon
+
+{
+    background: #282828;
+    color: #fff !important;
+}
+
+.theme__dark #theme__menu .theme__boxmenu a
+,.theme__dark .theme__blog a
+,.theme__dark .theme__blog h3
+ {
+    color: #fff;
+}
+
+.theme__dark #theme__menu {
+    background-color: #202020 !important;
+}
+.theme__dark #theme__menu .theme__boxmenu {
+    background-color: #202020 !important;
+    color: #c2d0da;
+}
+
+
+
+body {
 }
 
 .header {background-size: cover;
@@ -45,9 +101,22 @@ body {
     background-color: white;
     border-radius: 5px;
 }
-.position-relative {
-    position: relative !important;
+
+#theme_switch {
+    cursor: pointer;
 }
+
+#icon_moon{
+    font-size: 20px;
+    color: #fff;
+}
+
+#icon_sun{
+    font-size: 20px;
+    color: #fff;
+}
+
+
 .w3menu-right-content .search-bar .search .search-input {
     display: flex;
     flex: 1;
@@ -56,7 +125,7 @@ body {
     font-size: 16px;
     border: none;
     font-weight: 400;
-    border-radius: 6px;
+    border-radius: 4px;
     position: relative;
 }
 .w3menu-right-content .search-bar .search .search-icon {
@@ -66,6 +135,61 @@ body {
     top: 15px;
     cursor: pointer;
 }
+
+#trigger-overlay {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: #fbfdfb;
+    font-size: 1.95em;
+    padding: 0 8px;
+}
+
+.box__overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(6 3 0 / 77%);
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.box_menu a:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.box_menu{
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    margin-top: 160px;
+    text-align: center;
+}
+
+.box_menu ul li a {
+    color: #fff;
+    line-height: 2.5em;
+
+}
+
+.close_box_menu{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: #ff6600;
+    margin-top: 4%;
+    margin-right: 4%;
+    float: right;
+}
+
+.close_box_menu i{
+    font-size: 14px;
+    color: #fff;
+}
+
 .text {
     max-width: 600px;
     text-align: left;
@@ -115,8 +239,10 @@ h3 {
 .content-1-right p {
     font-size: 18px;
     line-height: 30px;
-    color: #787676;
+    color: #687b89;
 }
+
+/* blog */
 .blog {
     background-color: #ff6600;
 }
@@ -127,6 +253,17 @@ h3 {
     background-size: cover;
     position: relative;
     height: 100%;
+    z-index: 1;
+}
+.images::before {
+    content: "";
+    min-height: 100%;
+    background: #0000008a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 .right {
     padding: 3.75rem;
@@ -152,18 +289,15 @@ h3 {
     background: white;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    
 }
 .icon i {
     font-size: 28px;
     color:#ff6600;
     line-height: 2.5;
 }
-.icon i:hover {
-    
-    color: orange;
-}
- a {
+
+.like-food a {
     color: black;
     font-weight: 700;
     font-size: 20px;
@@ -173,6 +307,16 @@ h3 {
 .beat-deal p {
     font-size: 18px;
 }
+
+.beat-deal:hover .icon i{
+    color: orange;
+    transition: 0.5s;
+}
+.beat-food:hover .icon i{
+    color: orange;
+    transition: 0.5s;
+}
+
 /*what-new */
 .what-new {
     background-color: #f3f3f3;
@@ -213,7 +357,7 @@ h3 {
     transition: all 0.5s ease 0s;
     border-radius: 8px;
     position: relative;
-    border: 1px solid #ebebeb;
+    border: 1px solid #eee;
     margin-bottom: 30px;
     background-color: white;
 }
@@ -226,7 +370,7 @@ h3 {
     width: 70px;
     height: 70px;
     text-align: center;
-    background: gray;
+    background: #282828;
     line-height: 70px;
     border-radius: 6px;
     transition: 0.3s;
@@ -246,23 +390,28 @@ h3 {
     color: #a3a3a3;
     font-family:sans-serif;
 }
+.info1 a{
+    color: black;
+}
 .info1 h4 {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
 .menu-box:hover {
-    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 25px 98px 0 #0000001a;
+    cursor: pointer;
 }
 .menu-box:hover .icon {
     background-color:#ff6600 !important;
-    transition: 0.3s;
+    transition: 0.5s;
     
-}
-.menu-box .icon i:hover {
+}.menu-box:hover .icon i {
+    transition: 0.5s;
     color: white !important;
 }
+    
 .info1 a:hover {
-    color: #ff6600;
+    color: #ff6600 !important;
     text-decoration: none;
 }
