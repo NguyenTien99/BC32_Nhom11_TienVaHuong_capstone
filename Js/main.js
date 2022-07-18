@@ -1,4 +1,4 @@
 // Dark theme
-document.getElementById('theme__dark').onclick = function(){
-    document.getElementById("myBody").classList.toggle("dark"); 
+document.getElementById('theme_switch').onclick = function(){
+    document.getElementById("elm_body").classList.toggle("dark"); 
 }
