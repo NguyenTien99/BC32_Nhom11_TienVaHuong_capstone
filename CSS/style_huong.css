@@ -1,6 +1,10 @@
 * {
+    /* font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box; */
+    /* font-family: 'Pacifico', cursive; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*  Start default class*/
@@ -61,8 +65,8 @@
 
 
 
-body {
-}
+/* body {
+} */
 /* Header */
 .header {background-size: cover;
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../image/banner1.jpg);
@@ -209,7 +213,7 @@ body {
     font-weight: 600;
     text-transform: capitalize;
     color: #fff;
-    font-family:sans-serif;
+    /* font-family:sans-serif; */
 }
 .text p {
     font-size: 16px;
@@ -223,6 +227,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
+    transition: all .3s ease-in;
 }
 .btn-outline-light i {
     font-size: inherit;
@@ -237,12 +242,12 @@ h6 {
     line-height: 30px;
     letter-spacing: 1px;
     color: orangered;
-    font-family:cursive;    
+    font-family: 'Pacifico', cursive;
 }
 h3 {
-    font-size: 41px;
+    font-size: 38px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 48px;
 }
 .content-1-right p {
     font-size: 18px;
@@ -263,6 +268,7 @@ h3 {
     height: 100%;
     z-index: 1;
 }
+
 .images::before {
     content: "";
     min-height: 100%;
@@ -273,18 +279,31 @@ h3 {
     right: 0;
 
 }
-.right {
-    padding: 3.75rem;
-}
-.col-lg-6 h6 {
+
+/* .col-lg-6 h6 {
     color: white !important;
     font-size: 20px !important;
+} */
+.right h6{
+    color: white;
+    font-size: 20px;
 }
-.col-lg-6 p {
+/* .col-lg-6 p {
     color: #ffdfc9;
     margin-bottom: 40px;
     margin-top: 20px;
     font-size: 18px;
+} */
+.right p{
+    color: #ffdfc9;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.right>h3{
+    font-size: 38px;
+    line-height: 48px;
 }
 .like-food {
     display: grid;
@@ -432,6 +451,10 @@ h3 {
     .search-bar{
         display: none;
     }
+    .right p{
+        font-size: 16px;
+        line-height: 26px;
+    }
 } 
 @media (max-width:1190px){
     .text h3{
@@ -444,11 +467,25 @@ h3 {
         font-size: 44px;
         line-height: 53px;
     }
+    .images{
+        min-height: 200px;
+    }
+    .like-food a{
+        font-size: 18px;
+    }
 }
 @media (max-width: 800px) {
     .text h3 {
         font-size: 40px;
         line-height: 50px;
+    }
+    .header{
+        margin-top: 60px;
+    }
+    .info h4{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0;
     }
 }
 @media (max-width: 480px) {
@@ -461,6 +498,12 @@ h3 {
     .btn-white {
         padding: 10px 21px;
     }
+    .text{
+        margin-top: 30px;
+    }
+    .header{
+        min-height: 450px;
+    }
 }
 @media (max-width: 480px) {
     .btn-white {
@@ -472,15 +515,42 @@ h3 {
         font-size: 32px;
         line-height: 40px;
     }
+    .right>h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .title h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 @media (max-width: 600px) {
     .content-1-left h3 {
         font-size: 30px;
         line-height: 38px;
     }
+    h6 {
+        font-size: 16px;
+    }
+    .right>h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .title h3{
+        font-size: 30px;
+        line-height: 38px;
+    }
 }
 @media (max-width: 480px) {
     .content-1-left h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .right>h3{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .title h3{
         font-size: 26px;
         line-height: 36px;
     }
